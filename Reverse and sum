@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int reverseNumber(int n){
+int reversedN = 0, rem;
+cout << "Give a number: ";
+cin >> n;
+
+while(n!=0){
+rem = n%10;
+reversedN = reversedN * 10 + rem;
+n = n/10;
+}
+cout << "Reversed number is: " << reversedN << endl;
+}; 
+
+int S_of_Digits(int n) {
+int rem, S=0;
+while(n>0){
+    rem=n%10;
+    S=S+rem;
+    n=n/10;
+}cout << "The sum of digits is:  " << S;
+}
+
+int main(){
+int n;
+reverseNumber(n);
+S_of_Digits(n);
+}
