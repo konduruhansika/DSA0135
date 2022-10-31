@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class decimal
+{
+	protected:
+		int i=1,j=n,n,decimal=n,binary1=0;
+		public:
+			int dec()
+			{
+				cout<<"enter the decimal number";
+				cin>>n;
+			}
+			int bin()
+			{
+				for(j=n;j>0;j=j/2)
+				{
+					binary1=binary1+(n%2)*i;
+					i=i*10;
+					n=n/2;
+				}
+				cout<<("bbinary=",decimal,binary1);
+			}
+			
+};
+int main()
+{
+	decimal a;
+	a.dec();
+	a.bin();
+	return 0;
+}
